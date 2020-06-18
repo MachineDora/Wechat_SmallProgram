@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="container" style='background-image: {{bg}}; background-size:100% 100%;'>
+  <view class='page_row'>  
+      <view class='back'>
+        <text decode="{{true}}">&nbsp;&nbsp;
+        </text>
+        <view class="search">  
+          <view class="search_arr">  
+            <input class="" placeholder="搜索笔头" value="{{searchValue}}" bindinput='searchInput'/>  
+          </view>  
+        </view> 
+        <view class='sousuo' bindtap="searchConfirm">
+          搜索
+        </view>  
+        <image  class="searchcion" src="../../images/search.png"></image>
+      </view> 
+  </view> 
+
+<view id="common" class="content_list" wx:if="{{SearchKey==none||SearchKey==''}}">
+    <view wx:for="{{message}}" wx:key="{{index}}" wx:for-item="content" data-index="{{index}}" bindtap="clickMe">
+    <button class="btn" >
+    {{content[0]}}
+    <text class="time" style='font-size:{{font_size}};color:{{color}};'>
+     {{content[1]}}
+    </text>
+    </button>
+  </view>
+  </view>
+
+<view id="search" class="content_list"wx:if="{{SearchKey!=''}}">
+    <view wx:for="{{SearchList}}" wx:key="{{index}}" wx:for-item="content" data-index="{{content.pos}}" bindtap="clickMe">
+    <button class="btn" >
+    {{content.time}}
+    <text class="time" style='font-size:{{font_size}};color:{{color}};'>
+     {{content.message}}
+    </text>
+    </button>
+  </view>
+  </view>
+
+<view class="no">
+  <view class="nothing">
+  {{nothing1}}
+  </view>
+  <view class="nothing">
+  {{nothing2}}
+  </view>
+</view>
+
+  <view class="circle1" bindtap="click_add_text" style='background-color:{{background_Color}};'>
+    <image src="../../images/edit.png" class='a'></image>
+  </view>
+
+  <view class="circle3" bindtap="click_setting" style='background-color:{{background_Color}};'>
+    <image src="../../images/setting.png" class='a'></image>
+   </view>
+
+</view>

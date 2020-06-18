@@ -1,0 +1,39 @@
+/* pages/add/add.wxss */
+.cc{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.date_and_zi{
+  left: 15%;
+  font-size: 13px;
+  margin-top:-50px;
+  height:60%;
+  width: 70%;
+  position: fixed;
+  color: rgb(82, 82, 82);
+}
+
+.text{
+  left: 15%;
+  margin-top:-30px;
+  height:60%;
+  width: 70%;
+  position: fixed;
+
+}
+
+.ok{
+  width:30px;
+  height: 30px;
+  top: 2%;
+  left: 83%;
+  position: absolute;
+}

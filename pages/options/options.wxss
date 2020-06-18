@@ -1,0 +1,259 @@
+/* pages/options.wxss */
+.cc{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.style{
+  z-index: 1;
+  top: 3%;
+  left: 10%;
+  position: fixed;
+  font-size: 10px;
+  color: rgb(82, 82, 82);
+}
+
+.style2{
+  top: 22%;
+  left: 10%;
+  position: fixed;
+  font-size: 10px;
+  color: rgb(82, 82, 82);
+}
+
+.daxiao{
+  left: 12%;
+  top:10%;
+  position: fixed;
+  font-size: 14px;
+}
+
+.yanse{
+  left: 12%;
+  top:15%;
+  position: fixed;
+  font-size: 14px;
+}
+
+.zhuti{
+  left: 12%;
+  top:30%;
+  position: fixed;
+  font-size: 14px;
+}
+
+.select_box{
+  left:70%;
+  width:20%;
+  top: 10%;
+  height:5%;
+  border-radius: 14rpx; 
+  position: absolute; 
+  display: flex; 
+} 
+
+.select_box2{
+  left:70%;
+  width:20%;
+  top: 15%;
+  height:5%;
+  border-radius: 14rpx; 
+  position: absolute; 
+  display: flex; 
+} 
+
+.select_box3{
+  left:70%;
+  width:20%;
+  top: 30%;
+  height:5%;
+  border-radius: 14rpx; 
+  position: absolute; 
+  display: flex; 
+} 
+
+.select_box .select{ 
+  box-sizing: border-box; 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  border-radius: 8rpx; 
+  display: flex; 
+  align-items: center; 
+  padding: 0 10rpx; 
+} 
+
+.select_box2 .select{ 
+  box-sizing: border-box; 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  border-radius: 8rpx; 
+  display: flex; 
+  align-items: center; 
+  padding: 0 10rpx; 
+} 
+
+.select_box3 .select{ 
+  box-sizing: border-box; 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  border-radius: 8rpx; 
+  display: flex; 
+  align-items: center; 
+  padding: 0 10rpx; 
+} 
+
+.select_box .select .select_text{ 
+  font-size: 26rpx; 
+  color: #777777; 
+  line-height: 28rpx; 
+  flex: 1;
+} 
+
+.select_box2 .select .select_text{ 
+  font-size: 26rpx; 
+  color: #777777; 
+  line-height: 28rpx; 
+  flex: 1;
+} 
+
+.select_box3 .select .select_text{ 
+  font-size: 26rpx; 
+  color: #777777; 
+  line-height: 28rpx; 
+  flex: 1;
+} 
+
+.select_box .select .select_img{ 
+  width: 30rpx; 
+  height: 30rpx; 
+  display: block; 
+  transition:transform 0.3s; 
+} 
+
+.select_box2 .select .select_img2{ 
+  width: 30rpx; 
+  height: 30rpx; 
+  display: block; 
+  transition:transform 0.3s; 
+} 
+
+.select_box3 .select .select_img3{ 
+  width: 30rpx; 
+  height: 30rpx; 
+  display: block; 
+  transition:transform 0.3s; 
+} 
+
+.select_box .select .select_img_rotate{ 
+  transform:rotate(180deg);
+} 
+
+.select_box2 .select .select_img_rotate{ 
+  transform:rotate(180deg);
+} 
+
+.select_box3 .select .select_img_rotate{ 
+  transform:rotate(180deg);
+} 
+
+.select_box .option_box{ 
+  z-index: 3;
+  position: absolute;
+  top: calc(100% - 1px); 
+  width: 100%; 
+  box-sizing: border-box; 
+  height: 0; 
+  overflow-y: auto; 
+  background: rgb(255, 255, 255); 
+  transition: height 0.3s; 
+  border-left:1px solid #00000000; 
+  border-right:1px solid #00000000;
+} 
+
+.select_box .option_box .option{ 
+  display: block; 
+  line-height: 30rpx; 
+  font-size: 26rpx; 
+  border-top: 1px solid #00000000; 
+  border-bottom: 1px solid #00000000; 
+  padding: 10rpx;
+} 
+
+.select_box2 .option_box{ 
+  z-index: 2;
+  position: absolute;
+  top: calc(100% - 1px); 
+  width: 100%; 
+  box-sizing: border-box; 
+  height: 0; 
+  overflow-y: auto; 
+  background: rgb(255, 255, 255); 
+  transition: height 0.3s; 
+  border-left:1px solid #00000000; 
+  border-right:1px solid #00000000;
+} 
+
+.select_box2 .option_box .option{ 
+  display: block; 
+  line-height: 30rpx; 
+  font-size: 26rpx; 
+  border-top: 1px solid #00000000; 
+  border-bottom: 1px solid #00000000; 
+  padding: 10rpx;
+} 
+
+.select_box3 .option_box{ 
+  z-index: 1;
+  position: absolute;
+  top: calc(100% - 1px); 
+  width: 100%; 
+  box-sizing: border-box; 
+  height: 0; 
+  overflow-y: auto; 
+  background: rgb(255, 255, 255); 
+  transition: height 0.3s; 
+  border-left:1px solid #00000000; 
+  border-right:1px solid #00000000;
+} 
+
+.select_box3 .option_box .option{ 
+  display: block; 
+  line-height: 30rpx; 
+  font-size: 26rpx; 
+  border-top: 1px solid #00000000; 
+  border-bottom: 1px solid #00000000; 
+  padding: 10rpx;
+} 
+
+
+.line{
+  position: fixed;
+  height:0.5px;
+  width: 80%;
+  top: 8%;
+  left: 10%;
+  padding:0px;
+  overflow:hidden;
+  background-color:  rgb(156, 156, 156);
+}
+
+.line2{
+  position: fixed;
+  height:0.5px;
+  width: 80%;
+  top: 27%;
+  left: 10%;
+  padding:0px;
+  overflow:hidden;
+  background-color:  rgb(156, 156, 156);
+}

@@ -1,0 +1,60 @@
+<!--pages/options.wxml-->
+<view class='cc' style='background-image: {{bg}}; background-size:100% 100%; opacity:0.5'>
+</view>
+<view class="container">
+  <view class='style'>
+  笔头样式
+  </view>
+  <view class='line'>
+  </view>
+  <view class='daxiao'>
+    文字大小
+  </view>
+  <view class='select_box'>
+    <view class='select' catchtap='selectTap'>
+      <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{selectShow&&"select_img_rotate"}}' src='../../images/setting.png' background-size="contain">
+        </image>
+    </view>
+    <view class='option_box' style='height:{{selectShow?(selectData.length>5?325:selectData.length*50):0}}rpx;'>
+      <text class='option' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>
+      {{item}}
+      </text>
+    </view> 
+  </view>
+  <view class='yanse'>
+    文字颜色
+  </view>
+  <view class='select_box2'>
+    <view class='select' catchtap='selectTap2'>
+      <text class='select_text'>{{selectData2[inde]}}</text>
+        <image class='select_img2 {{selectShow2&&"select_img_rotate"}}' src='../../images/setting.png' background-size="contain">
+        </image>
+    </view>
+    <view class='option_box' style='height:{{selectShow2?(selectData2.length>5?325:selectData2.length*50):0}}rpx;'>
+      <text class='option' wx:for='{{selectData2}}' wx:key='this' data-index='{{index}}' catchtap='optionTap2'>
+      {{item}}
+      </text>
+    </view> 
+  </view>
+  <view class='style2'>
+  主题样式
+  </view>
+  <view class='line2'>
+  </view>
+  <view class='zhuti'>
+    配色方案
+  </view>
+    <view class='select_box3'>
+    <view class='select' catchtap='selectTap3'>
+      <text class='select_text'>{{selectData3[indexx]}}</text>
+        <image class='select_img3 {{selectShow3&&"select_img_rotate"}}' src='../../images/setting.png' background-size="contain">
+        </image>
+    </view>
+    <view class='option_box' style='height:{{selectShow3?(selectData3.length>5?325:selectData3.length*50):0}}rpx;'>
+      <text class='option' wx:for='{{selectData3}}' wx:key='this' data-index='{{index}}' catchtap='optionTap3'>
+      {{item}}
+      </text>
+    </view> 
+  </view>
+</view>

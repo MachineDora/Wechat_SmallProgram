@@ -1,0 +1,14 @@
+<!--pages/add/add.wxml-->
+<view class='cc' style='background-image: {{bg}}; background-size:100% 100%; opacity:0.5'>
+</view>
+<view class="container">
+  <view class="date_and_zi">
+  {{time}} {{zi}}字
+  </view>
+  <view>
+    <textarea class="text" style='font-size:{{font_size}};' value='{{content}}' placeholder='最近有啥要记的呢~' bindinput='cache' >
+    </textarea>
+  </view>
+  <image src="../../images/girl.png" class="ok" bindtap='Save'>
+  </image>
+</view>
